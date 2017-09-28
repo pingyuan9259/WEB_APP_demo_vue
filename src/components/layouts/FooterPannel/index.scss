@@ -1,0 +1,43 @@
+.footer_pannel {
+  padding: 30px 0;
+  text-align: center;
+  background-color: #fff;
+
+  .footer_content {
+    display: inline-block;
+    // text-align: left;
+    // width: 1000px;
+    width: 320px;
+    height: 40px;
+
+    .logo {
+      float: left;
+      margin-top: 3px;
+
+      & > a {
+        height: 32px;
+
+        img {
+          position: relative;
+          top: -6px;
+          width: 32px;
+          height: 32px;
+          margin-right: 8px;
+        }
+
+        span {
+          position: relative;
+          top: -10px;
+          font-size: 14px;
+          color: #393D54;
+        }
+      }
+    }
+
+    .lisence {
+      font-size: 12px;
+      line-height: 40px;
+      color: #859192;
+    }
+  }
+}

@@ -1,0 +1,110 @@
+.video_banner {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+
+ .mash {
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   z-index: 1;
+   background-color: #fff;
+   opacity: 0.1;
+ }
+
+  & > .dynamic {
+    & > video {
+      width: 100%;
+    }
+    
+    .title {
+      position: absolute;
+      z-index: 9;
+      top: 35%;
+      left: 15%;
+      color: #2C3E50;
+      transition: all .5s ease-in-out;
+
+      .title_1, .title_2 {
+        font-size: 22px;
+        opacity: 0;
+        transition: all .3s ease-in-out;
+      }
+
+      .icon-dash {
+        color: #000;
+        position: absolute;
+        left: -2px;
+        top: -13px;
+        font-size: 50px;
+        opacity: 0;
+      }
+
+      .correct {
+        animation: scale 2.1s linear;
+        position: absolute;
+        top: -6px;
+        right: -65px;
+        font-size: 28px;
+        font-weight: bold;
+        opacity: 0;
+        font-family: 'Hanzipen SC',FZShuTi;
+        transition: all .5s linear;
+      }
+
+      @keyframes scale {
+        80% { transform: scale(4) }
+      }
+    }
+
+    .center {
+      top: 40%;
+      left: 50% !important;
+      margin-left: -60px;
+
+      .title_1, .title_2 { font-size: 26px; margin-right: 25px; }
+      .icon-dash { left: -5px; top: -16px; font-size: 60px; }
+      .correct { right: -10px; top: 0; font-size: 26px; }
+    }
+
+    .content {
+      position: absolute;
+      z-index: 9;
+      top: 44%;
+      left: 15%;
+      color: #2C3E50;
+      width: 320px;
+      font-size: 18px;
+      font-family: 'Hanzipen SC',FZShuTi;
+      line-height: 40px;
+    }
+
+    .show {
+      opacity: 1 !important;
+    }
+
+    @media screen and (min-width: 1440px) {
+      .title, .content {
+        left: 22%;
+      }
+    }
+  }
+
+  & > .static {
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      opacity: 0;
+      transition: all 1s linear;
+    }
+
+    .active {
+      opacity: 1;
+    }
+  }
+}

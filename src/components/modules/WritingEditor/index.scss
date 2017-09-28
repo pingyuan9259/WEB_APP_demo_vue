@@ -1,0 +1,118 @@
+.writing_editor {
+
+  .html_editor {
+    position: relative;
+
+    #html_editor {
+      border: none;
+      border-radius: 6px;
+      background-color: #f9f9f9;
+      border: 1px solid #f5f5f5;
+      padding: 12px 18px;
+      margin-bottom: 32px;
+      width: calc(100% - 2px);
+      box-sizing: border-box;
+    }
+
+    .text_count {
+      bottom: -30px;
+    }
+  }
+
+  .markdown_editor {
+    margin-top: 10px;
+  }
+
+  /* quill custom style */
+  // toolbar样式
+  .fixed_toolbar { // 页面滚动一定程度以后toolbar浮动
+    position: fixed;
+    top: 100px;
+    left: 50%;
+    // margin-left: -245px;
+    margin-left: -230px;
+    z-index: 9;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 8px !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  .without_toolbar { // toolbar浮动以后，编辑框上方需要预留出一定空间来填补之前的位置
+    margin-top: 32px;
+  }
+  // .ql-tooltip { display: none; } // toolbar浮动以后出来的，不知道什么东西
+
+  .ql-toolbar.ql-snow {
+    border: none;
+    padding: 0;
+    padding-bottom: 8px;
+    margin-top: -2px;
+  }
+  // 下拉展开后按钮高亮，下拉列表样式
+  .ql-toolbar.ql-snow .ql-picker-label { transition: all .1s linear; border: none; }
+  .ql-toolbar.ql-snow .ql-picker.ql-expanded .ql-picker-label { border: none; border-radius: 4px; background-color: #f9f9f9; }
+  .ql-toolbar.ql-snow .ql-picker.ql-expanded .ql-picker-options { transition: all .2s linear; }
+  .ql-snow .ql-picker.ql-expanded .ql-picker-options { border-radius: 4px; z-index: 9; }
+  .ql-toolbar.ql-snow .ql-picker-options { border: none; }
+
+  // toolbar按钮颜色
+  .ql-snow .ql-stroke { stroke: #666; transition: all .1s linear; }
+  .ql-snow .ql-picker { color: #666; transition: all .1s linear; }
+
+  // toolbar按钮hover颜色
+  .ql-snow.ql-toolbar button:hover, .ql-snow .ql-toolbar button:hover, .ql-snow.ql-toolbar button:focus, .ql-snow .ql-toolbar button:focus, .ql-snow.ql-toolbar button.ql-active, .ql-snow .ql-toolbar button.ql-active, .ql-snow.ql-toolbar .ql-picker-label:hover, .ql-snow .ql-toolbar .ql-picker-label:hover, .ql-snow.ql-toolbar .ql-picker-label.ql-active, .ql-snow .ql-toolbar .ql-picker-label.ql-active, .ql-snow.ql-toolbar .ql-picker-item:hover, .ql-snow .ql-toolbar .ql-picker-item:hover, .ql-snow.ql-toolbar .ql-picker-item.ql-selected, .ql-snow .ql-toolbar .ql-picker-item.ql-selected {
+    color: #7AC5B5;
+  }
+  .ql-snow.ql-toolbar button:hover .ql-fill, .ql-snow .ql-toolbar button:hover .ql-fill, .ql-snow.ql-toolbar button:focus .ql-fill, .ql-snow .ql-toolbar button:focus .ql-fill, .ql-snow.ql-toolbar button.ql-active .ql-fill, .ql-snow .ql-toolbar button.ql-active .ql-fill, .ql-snow.ql-toolbar .ql-picker-label:hover .ql-fill, .ql-snow .ql-toolbar .ql-picker-label:hover .ql-fill, .ql-snow.ql-toolbar .ql-picker-label.ql-active .ql-fill, .ql-snow .ql-toolbar .ql-picker-label.ql-active .ql-fill, .ql-snow.ql-toolbar .ql-picker-item:hover .ql-fill, .ql-snow .ql-toolbar .ql-picker-item:hover .ql-fill, .ql-snow.ql-toolbar .ql-picker-item.ql-selected .ql-fill, .ql-snow .ql-toolbar .ql-picker-item.ql-selected .ql-fill, .ql-snow.ql-toolbar button:hover .ql-stroke.ql-fill, .ql-snow .ql-toolbar button:hover .ql-stroke.ql-fill, .ql-snow.ql-toolbar button:focus .ql-stroke.ql-fill, .ql-snow .ql-toolbar button:focus .ql-stroke.ql-fill, .ql-snow.ql-toolbar button.ql-active .ql-stroke.ql-fill, .ql-snow .ql-toolbar button.ql-active .ql-stroke.ql-fill, .ql-snow.ql-toolbar .ql-picker-label:hover .ql-stroke.ql-fill, .ql-snow .ql-toolbar .ql-picker-label:hover .ql-stroke.ql-fill, .ql-snow.ql-toolbar .ql-picker-label.ql-active .ql-stroke.ql-fill, .ql-snow .ql-toolbar .ql-picker-label.ql-active .ql-stroke.ql-fill, .ql-snow.ql-toolbar .ql-picker-item:hover .ql-stroke.ql-fill, .ql-snow .ql-toolbar .ql-picker-item:hover .ql-stroke.ql-fill, .ql-snow.ql-toolbar .ql-picker-item.ql-selected .ql-stroke.ql-fill, .ql-snow .ql-toolbar .ql-picker-item.ql-selected .ql-stroke.ql-fill {
+    fill: #7AC5B5;
+  }
+  .ql-snow.ql-toolbar button:hover .ql-stroke, .ql-snow .ql-toolbar button:hover .ql-stroke, .ql-snow.ql-toolbar button:focus .ql-stroke, .ql-snow .ql-toolbar button:focus .ql-stroke, .ql-snow.ql-toolbar button.ql-active .ql-stroke, .ql-snow .ql-toolbar button.ql-active .ql-stroke, .ql-snow.ql-toolbar .ql-picker-label:hover .ql-stroke, .ql-snow .ql-toolbar .ql-picker-label:hover .ql-stroke, .ql-snow.ql-toolbar .ql-picker-label.ql-active .ql-stroke, .ql-snow .ql-toolbar .ql-picker-label.ql-active .ql-stroke, .ql-snow.ql-toolbar .ql-picker-item:hover .ql-stroke, .ql-snow .ql-toolbar .ql-picker-item:hover .ql-stroke, .ql-snow.ql-toolbar .ql-picker-item.ql-selected .ql-stroke, .ql-snow .ql-toolbar .ql-picker-item.ql-selected .ql-stroke, .ql-snow.ql-toolbar button:hover .ql-stroke-miter, .ql-snow .ql-toolbar button:hover .ql-stroke-miter, .ql-snow.ql-toolbar button:focus .ql-stroke-miter, .ql-snow .ql-toolbar button:focus .ql-stroke-miter, .ql-snow.ql-toolbar button.ql-active .ql-stroke-miter, .ql-snow .ql-toolbar button.ql-active .ql-stroke-miter, .ql-snow.ql-toolbar .ql-picker-label:hover .ql-stroke-miter, .ql-snow .ql-toolbar .ql-picker-label:hover .ql-stroke-miter, .ql-snow.ql-toolbar .ql-picker-label.ql-active .ql-stroke-miter, .ql-snow .ql-toolbar .ql-picker-label.ql-active .ql-stroke-miter, .ql-snow.ql-toolbar .ql-picker-item:hover .ql-stroke-miter, .ql-snow .ql-toolbar .ql-picker-item:hover .ql-stroke-miter, .ql-snow.ql-toolbar .ql-picker-item.ql-selected .ql-stroke-miter, .ql-snow .ql-toolbar .ql-picker-item.ql-selected .ql-stroke-miter {
+    stroke: #7AC5B5;
+  }
+
+  .ql-editor.ql-blank::before { // placeholder
+    font-style: normal;
+    color: #ccc;
+    font-size: 15px;
+    font-family: "PingFangSC-Light","PingFang SC",Helvetica,"Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+  }
+  .ql-editor { // 编辑框样式
+    height: 200px;
+    padding: 0;
+    overflow: hidden;
+    font-size: 15px;
+    font-family: "PingFangSC-Light","PingFang SC",Helvetica,"Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+    line-height: 28px;
+  }
+
+  // 代码样式
+  .ql-snow .ql-editor pre.ql-syntax { color: #333; }
+
+  // 超链接
+  .ql-snow .ql-tooltip input[type=text] { border-color: #f5f5f5; }
+  .ql-snow .ql-tooltip { border: none; border-radius: 4px; font-family: ''; font-size: 14px; }
+  .ql-snow .ql-tooltip a { color: #7AC5B5; }
+
+  // 图片
+  .ql-editor img { width: auto !important; max-width: 60% !important; }
+
+  // 视频icon改音频
+  [class^="ql-video"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'iconfont' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .ql-video:before { content: "\e936"; color: #666; font-size: 14px; }
+  .ql-video:hover::before { color: #7AC5B5; }
+  .ql-video > svg { display: none; }
+  
+}

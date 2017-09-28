@@ -1,0 +1,146 @@
+.lessons_list {
+  position: relative;
+  width: 1030px;
+  margin: 0 auto;
+  overflow: hidden;
+
+  & > ul {
+    overflow: hidden;
+    margin-bottom: 40px;
+  }
+
+  .lessons_item {
+    float: left;
+    padding: 15px;
+  }
+
+  .lessons_item > .card {
+    position: relative; // 相对定位配合zindex为了解决hover是border因transform失效
+    z-index: 1;
+    width: 310px;
+    background-color: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+    cursor: pointer;
+    border: 1px solid #E9EFF4;
+    transition: all .4s ease-out;
+  }
+
+  .lessons_item > .card:hover {
+    border: 1px solid #DEE1E2;
+
+    .lesson_cover > img {
+      transform: scale(1.25);
+      transition: all 8s ease-out;
+      position: relative; // 相对定位配合zindex为了解决hover是border因transform失效
+      z-index: 0;
+    }
+  }
+
+
+  .lessons_item > .card > .lesson_cover {
+    height: 200px;
+    background-color: #e0e6e6;
+    overflow: hidden;
+
+    & > img {
+      width: 100%;
+      transition: all .4s ease-out;
+    }
+  }
+
+  .lessons_item > .card > .lesson_desc {
+    padding: 0 20px;
+    text-align: left;
+    
+    & > h3 {
+      font-size: 20px;
+      line-height: 20px;
+      height: 20px;
+      color: #333;
+      margin: 22px 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    & > span {
+      display: block;
+      line-height: 12px;
+      font-size: 12px;
+      height: 12px;
+      color: #999;
+      margin-bottom: 25px;
+    }
+
+    .teacher_info {
+      position: relative;
+      padding-left: 58px;
+      margin-bottom: 25px;
+
+      & > img {
+        position: absolute;
+        top: -2px;
+        left: 0;
+        display: block;
+        width: 46px;
+        height: 46px;
+        border-radius: 23px;
+      }
+
+      & > span {
+        display: block;
+        font-size: 12px;
+        line-height: 22px;
+        height: 22px;
+        color: #999;
+      }
+
+      .teacher_name {
+        color: #333;
+      }
+    }
+
+    .lesson_is_living { color: #fd9b66; }
+  }
+
+  .tip { padding: 15vh 0; }
+  // .loading { padding: 30vh 0; }
+}
+
+// 适应1366屏幕
+// @media screen and (min-width: 1280px) {
+//   .lessons_list {
+//     width: 1090px;
+
+//     .lessons_item {
+//       padding: 20px;
+//     }
+
+//     .lessons_item > .card {
+//       width: 318px;
+//     }
+//   }
+// }
+
+// // 适应1440屏幕
+// @media screen and (min-width: 1439px) {
+//   .lessons_list {
+//     width: 1120px;
+
+//     .lessons_item {
+//       padding: 25px;
+//     }
+//   }
+// }
+
+// // 适应大屏幕
+// @media screen and (min-width: 1680px) {
+//   .lessons_list {
+//     width: 1520px;
+
+//     .lessons_item {
+//       padding: 30px;
+//     }
+//   }
+// }

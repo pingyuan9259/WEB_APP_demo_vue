@@ -1,0 +1,57 @@
+.pagination {
+  position: relative;
+  z-index: 999;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin-right: 20px;
+  margin-top: 40px;
+
+  .item {
+    display: inline-block;
+    cursor: pointer;
+
+    a {
+      display: inline-block;
+      width: 30px;
+      text-align: center;
+      line-height: 16px;
+      font-size: 16px;
+      color: #4DA1FF;
+      text-decoration: none;
+      transition: all .2s ease-in-out;
+    }
+
+    a:hover {
+      color: #2c97d2;
+      transition: all .2s ease-in-out;
+    }
+
+    .active { color: #999; cursor: default; }
+    .active:hover { color: #999; }
+
+    .disabled { color: #ccc; cursor: default; }
+    .disabled:hover { color: #ccc; }
+  }
+}
+
+// 适应1280屏幕
+@media screen and (max-width: 1280px) {
+  .pagination {
+    margin-right: 15px;
+  }
+}
+
+// 适应1440屏幕
+@media screen and (min-width: 1439px) {
+  .pagination {
+    margin-right: 25px;
+  }
+}
+
+// 适应大屏幕
+@media screen and (min-width: 1680px) {
+  .pagination {
+    margin-right: 30px;
+  }
+}

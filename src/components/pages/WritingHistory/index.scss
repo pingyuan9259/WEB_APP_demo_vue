@@ -1,0 +1,85 @@
+.article_history_page {
+  position: relative;
+  background-color: #fff;
+  margin: 45px auto;
+  border-radius: 6px;
+  // border: 1px solid #E9EFF4;
+  overflow: hidden;
+  width: 820px;
+  min-height: calc(100vh - 250px);
+  padding: 35px 60px;
+  text-align: center;
+
+  .article_history {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 40px;
+    width: 100%;
+
+    & > h3 {
+      text-align: left;
+      margin-top: 10px;
+      margin-bottom: 30px;
+      font-size: 14px;
+      color: #7AC5B5;
+    }
+
+    & > table {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+
+  .article_history_head {
+    color: #999;
+    font-size: 14px;
+    font-weight: normal;
+
+    & > th {
+      padding: 12px 20px;
+      text-align: left;
+      height: 30px;
+      vertical-align: middle;
+      white-space: nowrap;
+    }
+
+    .cover { padding-right: 60px; }
+  }
+
+
+  .article_history_item {
+    font-size: 13px;
+    color: #666;
+    cursor: pointer;
+
+    & > td {
+      max-width: 20vw;
+      padding: 12px 20px;
+      text-align: left;
+      white-space: nowrap;
+      cursor: pointer;
+      height: 30px;
+      vertical-align: middle;
+    }
+
+    .cover {
+      width: 80px;
+      text-align: center;
+      padding-right: 60px;
+
+      & > img {
+        height: 30px;
+      }
+    }
+  }
+  .article_history_item:nth-child(even) { background-color: #f9f9f9; }
+
+  .article_history_item:hover {
+    background-color: #f5f5f5;
+  }
+
+  .article_history > .tip {
+    width: 100%;
+    padding: 22vh 0;
+  }
+}

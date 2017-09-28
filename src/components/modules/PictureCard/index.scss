@@ -1,0 +1,42 @@
+.pic_box {
+  margin-bottom: 25px;
+  
+  .image-item {
+    display: inline-block;
+    margin: 5px 0;
+    margin-right: 20px;
+    position: relative;
+    overflow: hidden;
+    border-style: solid;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    
+    .image-preview {
+      display: none;
+      background-color: #000;
+      opacity: .5;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+      }
+    }
+
+    &:hover {
+      .image-preview {
+        display: block;
+      }
+    }
+  }
+}

@@ -1,0 +1,163 @@
+.my_account_page {
+
+  .my_account {
+    position: relative;
+    background-color: #fff;
+    margin: 45px auto;
+    border-radius: 6px;
+    border: 1px solid #E9EFF4;
+    overflow: hidden;
+    width: 620px;
+    padding: 35px 90px;
+    text-align: center;
+
+    .icon-sun-coin {
+      display: inline-block;
+      font-size: 120px;
+      margin-bottom: 20px;
+    }
+
+    .balance {
+      margin-bottom: 25px;
+      height: 42px;
+
+      & > h2 {
+        font-size: 14px;
+        color: #28313B;
+        margin-bottom: 10px;
+      }
+
+      .coin_count {
+        font-size: 18px;
+        font-weight: bold;
+        color: #28313B;
+      }
+    }
+
+    .show_price_list {
+      background-color: #2ECC71;
+    }
+
+    .price_list {
+      position: relative;
+      background-color: #F9FAFC;
+      padding: 20px;
+      padding-bottom: 30px;
+      border-radius: 4px;
+      margin-top: 20px;
+      overflow: hidden;
+
+      .option {
+        overflow: hidden;
+        margin-bottom: 30px;
+        
+        & > h4 {
+          display: inline-block;
+          float: left;
+          height: 30px;
+          line-height: 30px;
+          font-size: 14px;
+          color: #97A4B1;
+        }
+
+        .charge {
+          float: right;
+          background-color: #2ECC71;
+        }
+
+        .cancel {
+          float: right;
+          margin-right: 15px;
+          color: #2ECC71;
+          border-color: #2ECC71;
+        }
+      }
+
+      .price_item {
+        display: inline-block;
+        border: 1px solid #E9EFF4;
+        border-radius: 6px;
+        width: 80px;
+        background-color: #fff;
+        padding: 20px 0;
+        margin: 0 5px;
+        cursor: pointer;
+        transition: all .1s linear;
+
+        .coin_num {
+          display: inline-block;
+          font-size: 16px;
+          color: #28313B;
+          font-weight: bold;
+          margin-bottom: 10px;
+        }
+
+        .price {
+          display: block;
+          color: #97A4B1;
+          font-size: 14px;
+        }
+      }
+
+      .price_item:hover {
+        border-color: #2ECC71;
+      }
+
+      .active {
+        border-color: #2ECC71;
+      }
+    }
+
+    .paylog {
+      position: relative;
+      display: inline-block;
+      margin-bottom: 40px;
+
+      & > h3 {
+        text-align: left;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        font-size: 14px;
+      }
+    }
+
+    .paylog_head {
+      color: #A7B8C3;
+      border-bottom: 1px solid #F4F8F9;
+      font-size: 14px;
+      font-weight: normal;
+
+      & > th {
+        padding: 12px 0; 
+        padding-right: 80px;
+        text-align: left;
+        white-space: nowrap;
+      }
+      & > th:last-child { padding-right: 0; }
+    }
+
+
+    .paylog_item {
+      font-size: 13px;
+      color: #6A7D8D;
+      border-bottom: 1px solid #F4F8F9;
+
+      & > td {
+        padding: 12px 0;
+        padding-right: 80px;
+        text-align: left;
+        white-space: nowrap;
+      }
+      & > td:last-child { padding-right: 0; }
+
+      & > .cost { color: #FB7648; }
+      & > .charge { color: #2ECC71; }
+    }
+    .paylog_item:last-child { border: none; }
+
+    .paylog > .tip {
+      width: 500px;
+      padding: 15vh 0;
+    }
+  }
+}

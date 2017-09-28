@@ -1,0 +1,247 @@
+.lesson_details_page {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  text-align: center;
+  overflow: hidden;
+
+  section {
+    width: 1000px;
+    display: inline-block;
+  }
+
+  h2 {
+    font-size: 32px;
+    line-height: 50px;
+    color: #28313B;
+  }
+
+  h3 {
+    font-size: 20px;
+    line-height: 30px;
+    color: #28313B;
+  }
+
+  h4 {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 25px;
+    color: #28313B;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 20px;
+    color: #6D8090;
+  }
+
+  & > .buy {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 80px;
+
+    & > a {
+      background-color: #2ECC71;
+    }
+  }
+
+  & > .teacher {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 80px;
+
+    & > a {
+      background-color: #3398DB;
+    }
+  }
+
+  .banners_container {
+    width: 100%;
+    height: 38vw;
+    margin-top: 80px;
+  }
+
+  .lessonInfo {
+
+    & > h2 {
+      margin: 35px 0;
+    }
+
+    .price, .free, .members_price, .icon-gold-coin {
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .free {
+      color: #2ECC71;
+    }
+
+    .members_price {
+      color: #2ECC71;
+      font-weight: normal;
+      margin-left: 50px;
+    }
+    
+    .date {
+      color: #9BA3AF;
+      display: block;
+      margin-top: 12px;
+      margin-bottom: 35px;
+    }
+  }
+
+  .features {
+    margin-bottom: 40px;
+
+    & > h3 {
+      margin: 40px 0;
+    }
+
+    .features_item {
+      float: left;
+      text-align: left;
+      width: 430px;
+      margin-right: 130px;
+      margin-bottom: 40px;
+
+      & > h4 {
+        margin: 20px 0;
+
+        & > span {
+          position: relative;
+          top: 2px;
+          font-size: 18px;
+          margin-right: 8px;
+        }
+      }
+
+      & > p {
+        padding-left: 30px;
+        line-height: 25px;
+      }
+    }
+
+    .features_item:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+
+  .desc_pic {
+
+    .desc_pic_item {
+      & > img {
+        border-radius: 6px;
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  .outlines {
+    margin-bottom: 100px;
+
+    & > h3 {
+      margin: 40px 0;
+    }
+
+    .outlines_item {
+      display: inline-block;
+      margin-bottom: 25px;
+      width: 750px;
+      height: 65px;
+      text-align: left;
+      border: 1px solid #E9EFF4;
+      border-radius: 7px;
+      padding: 40px 45px;
+
+      & > img {
+        float: left;
+        width: 65px;
+        height: 65px;
+        border-radius: 32.5px;
+        margin-right: 30px;
+      }
+
+      & > h4 {
+        margin-top: 5px;
+        margin-bottom: 0px;
+      }
+
+      & > span {
+        display: inline-block;
+        font-size: 12px;
+        color: #000;
+      }
+
+      & > p {
+        margin-top: 8px;
+      }
+    }
+  }
+
+  .teacher_intros {
+    margin-bottom: 100px;
+
+    .intros_item {
+      display: table;
+      text-align: left;
+
+      .teacher_avatar {
+        display: table-cell;
+        width: 380px;
+
+        & > img {
+          width: 100%;
+        }
+      }
+
+      .teacher_desc {
+        display: table-cell;
+        vertical-align: middle;
+        width: 540px;
+        padding-left: 60px;
+
+        & > h3 {
+          margin-bottom: 15px;
+        }
+
+        & > p {
+          margin-top: 45px;
+          font-size: 15px;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+
+  .faqs {
+    margin-bottom: 80px;
+
+    & > h3 {
+      margin: 40px 0;
+    }
+
+    .faqs_item {
+      float: left;
+      text-align: left;
+      width: 370px;
+      margin-right: 200px;
+      margin-bottom: 40px;
+
+      & > h4 {
+        margin: 20px 0;
+        line-height: 25px;
+      }
+
+      & > p {
+        color: #9BA3AF;
+        line-height: 25px;
+      }
+    }
+
+    .faqs_item:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.writing_app {
+  & > .body_pannel {
+    padding-left: 200px;
+    padding-top: 90px;
+    bottom: 0;
+    height: 100%;
+    background-color: #eee;
+  }
+
+  & > .body_pannel > .tip {
+    background-color: #fff;
+    margin: 45px auto;
+    border-radius: 6px;
+    overflow: hidden;
+    width: 820px;
+    min-height: calc(100vh - 250px);
+    padding: 35px 60px;
+    text-align: center;
+
+    p {
+      text-align: center;
+      font-size: 18px;
+      color: #474F58;
+      padding: 25vh 0;
+
+      & > .tip_head {
+        position: relative;
+        top: -10px;
+        left: -10px;
+        color: #9BA3AF;
+      }
+    }
+  }
+
+
+  & > .nav_pannel { background-color: #4C545A; }
+  & > .nav_pannel .nav_avatar { background-color: #7AC5B5; }
+  & > .nav_pannel .nav_item { color: #999; }
+  & > .nav_pannel .nav_item:hover { background-color: #464e54 !important; }
+  & > .nav_pannel .nav_item > span { color: #7AC5B5; }
+  & > .nav_pannel .router-link-active { background-color: #41484E; color: #fff; }
+  & > .nav_pannel .logout .icon-switch { color: #ccc; }
+  & > .nav_pannel .logout .text { color: #ccc; }
+}

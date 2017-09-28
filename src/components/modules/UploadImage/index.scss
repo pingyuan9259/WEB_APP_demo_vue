@@ -1,0 +1,25 @@
+.upload_image {
+  margin-bottom: 20px;
+
+  & > .add {
+    .add_btn {
+      display: inline-block;
+      background-color: #f9f9f9;
+      border: 1px dashed #c0ccda;
+      border-radius: 6px;
+      text-align: center;
+      width: 60px;
+      height: 60px;
+      cursor: pointer;
+      transition: all .1s linear;
+
+      & > span {
+        position: relative;
+        top: 22px;
+        color: #8c939d;
+        font-size: 16px;
+      }
+    }
+    .add_btn:hover { opacity: 0.9; }
+  }
+}

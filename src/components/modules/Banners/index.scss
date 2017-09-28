@@ -1,0 +1,146 @@
+.banners {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+
+  // br banner
+  & > .br_banner {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+
+    .cover {
+      display: block;
+      // opacity: 0;
+      width: 100%;
+    }
+  }
+
+  // lesson detail
+  & > .lesson_detail {
+    height: 150px;
+    text-align: center;
+    padding-top: 40px;
+    margin-bottom: -190px;
+    border-bottom: 1px solid #E9EFF4;
+    background-size: auto 190px;
+
+    & > .title {
+      font-size: 24px;
+      line-height: 24px;
+      height: 24px;
+      color: #474F58;
+      margin-bottom: 20px;
+    }
+
+    & > .teacher_info {
+      display: inline-block;
+      margin-bottom: 28px;
+
+      & > img {
+        display: block;
+        float: left;
+        margin-top: 6px;
+        width: 36px;
+        height: 36px;
+        border-radius: 18px;
+      }
+
+      & > div {
+        float: left;
+        text-align: left;
+        margin-left: 10px;
+
+        & > span {
+          display: block;
+          font-size: 12px;
+          line-height: 24px;
+          height: 24px;
+          color: #999;
+        }
+      }
+    }
+
+    .tabs {
+      .tabs_item {
+        font-size: 16px;
+        color: #2C3E50;
+        display: inline-block;
+        cursor: pointer;
+        width: 80px;
+        padding-bottom: 8px;
+        border-bottom: 4px solid transparent;
+        transition: all .15s linear;
+      }
+
+      .router-link-active {
+        border-color: #2ECC71;
+      }
+
+      .router-link-active.not_verified {
+        border-color: #FB7648;
+      }
+    }
+  }
+
+  // my profile
+  & > .my_profile {
+    height: 130px;
+    background-color: #fff;
+    padding-top: 20px;
+    border-bottom: 1px solid #E9EFF4;
+
+    & > img {
+      display: block;
+      float: left;
+      margin-left: 45px;
+      margin-right: 30px;
+      width: 100px;
+      height: 100px;
+      border-radius: 50px;
+    }
+
+    .name {
+      display: table;
+      margin-top: 15px;
+      margin-bottom: 5px;
+
+      h3 {
+        display: table-cell;
+        vertical-align: middle;
+        padding-right: 10px;
+        font-size: 22px;
+        color: #2C3E50;
+      }
+      .label { position: relative; top: -4px; display: inline-block; padding: 3px 8px; border-radius: 3px; font-size: 9px; color: #fff; }
+    }
+
+    .industry, .dot, .city, .introduction {
+      font-size: 14px;
+      line-height: 28px;
+      margin-bottom: 8px;
+    }
+
+    .industry { color: #A7B8C3; }
+    .dot { color: #BDC3C7; font-weight: bold; margin: 0 5px; }
+    .city { color: #3398DB; }
+    .introduction {
+      color: #9BA3AF;
+      font-size: 13px;
+      max-width: 600px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+  }
+
+  // .br_banner .cover[lazy=loaded] {
+  //   opacity: 1;
+  //   transition: all .5s linear;
+  // }
+}

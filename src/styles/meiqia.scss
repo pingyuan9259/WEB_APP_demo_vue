@@ -1,0 +1,35 @@
+#MEIQIA-BTN-HOLDER {
+  bottom: 30px !important;
+  right: 20px !important;
+}
+
+#MEIQIA-BTN {
+  box-shadow: none !important;
+  border: none !important;
+  border-radius: 6px;
+  background-color: #d7dee0 !important;
+  opacity: 0.9;
+  transition: all .1s linear;
+}
+
+#MEIQIA-BTN:hover {
+  background-color: #2ECC71 !important;
+}
+
+#MEIQIA-BTN-LINE {
+  background-color: #f7f7f7 !important;
+  margin: 0 5px !important;
+  width: 75% !important;
+}
+
+#MEIQIA-BTN-TEXT {
+  font-size: 14px !important;
+}
+
+#MEIQIA-PANEL-HOLDER {
+  border: 1px solid #E9EFF4 !important;
+  box-shadow: none !important;
+  border-radius: 6px;
+  bottom: 15px !important;
+  right: 12px !important;
+}

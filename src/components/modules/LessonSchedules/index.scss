@@ -1,0 +1,232 @@
+.lesson_content {
+  margin-top: 230px;
+
+  & > .notice, & > .ppt, & > .schedules {
+    position: relative;
+    background-color: #fff;
+    margin: 30px auto;
+    border-radius: 6px;
+    border: 1px solid #E9EFF4;
+  }
+
+  & > .notice {
+    display: table;
+    width: 750px;
+    padding: 25px;
+    min-height: 40px;
+
+    & > span { //公告icon
+      position: absolute;
+      top: 25px;
+      left: 25px;
+      color: #FECF12;
+      font-size: 40px;
+    }
+
+    & > p { // 公告文字
+      display: table-cell;
+      vertical-align: middle;
+      padding-left: 56px;
+      color: #97A4B1;
+      font-size: 13px;
+      line-height: 22px;
+      word-wrap: break-word;
+      max-width: 694px;
+    }
+  }
+
+  & > .ppt {
+    width: 730px;
+    padding: 35px;
+    min-height: 40px;
+  }
+
+  & > .schedules {
+    width: 730px;
+    min-height: 166px;
+    padding: 35px;
+    overflow: hidden;
+
+    .live_btn {
+      float: right;
+      background-color: #2ECC71;
+    }
+
+    .live_btn_disabled {
+      float: right;
+    }
+
+    .edit {
+      float: right;
+      margin-right: 15px;
+      color: #2ECC71;
+      border-color: #2ECC71;
+    }
+
+    & > h3 {
+      display: inline-block;
+      line-height: 30px;
+      height: 30px;
+      font-size: 14px;
+      color: #97A4B1;
+    }
+
+    .schedules_item {
+      margin: 30px 0;
+      padding-left: 52px;
+      position: relative;
+
+      .live_btn, .start_lesson {
+        position: relative;
+        top: -20px;
+        margin-left: 15px;
+        float: right;
+        color: #2ECC71;
+        background-color: transparent;
+        border-color: #2ECC71;
+      }
+
+      .start_lesson {
+        color: #2a8bcb;
+        border-color: #2a8bcb;
+      }
+    }
+
+    .index {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: inline-block;
+      text-align: center;
+      border: 1px solid #DEE1E2;
+      height: 36px;
+      width: 36px;
+      line-height: 36px;
+      border-radius: 20px;
+      color: #393D54;
+      font-size: 14px;
+    }
+
+    .schedules_title {
+      display: block;
+      color: #393D54;
+      font-size: 14px;
+      line-height: 14px;
+      margin-bottom: 8px;
+    }
+
+    .schedules_time {
+      font-size: 13px;
+      line-height: 13px;
+      color: #93A5A6;
+    }
+
+    .update, .live_option {
+      cursor: pointer;
+      color: #3398DB;
+      font-size: 13px;
+      margin-left: 12px;
+      transition: all .1s linear;
+      padding-left: 15px;
+      border-left: 1px solid #E9EFF4;
+    }
+    .update:hover, .live_option:hover { color: #2a8bcb; }
+
+    .load {
+      margin-bottom: 20px;
+      margin-top: 40px;
+      font-size: 14px;
+      color: #A7B8C3;
+      text-align: center;
+    }
+
+    .tip { padding: 15vh 0; }
+  }
+
+  & > .editor_mash {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+  }
+
+  & > .editor_mash > .editor {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -275px;
+    margin-top: -120px;
+    width: 680px;
+    background-color: #F9FAFC;
+    padding: 35px;
+    border-radius: 6px;
+    overflow: hidden;
+
+    .option {
+      margin-bottom: 25px;
+      overflow: hidden;
+
+      & > h3 {
+        display: inline-block;
+        line-height: 30px;
+        color: #333;
+      }
+
+      .submit {
+        float: right;
+        margin-right: 17px;
+        color: #fff;
+        background-color: #2ECC71;
+      }
+
+      .cancel {
+        float: right;
+        margin-right: 15px;
+        color: #2ECC71;
+        border-color: #3AD59C;
+      }
+
+      .delete {
+        float: right;
+        margin-right: 15px;
+        color: #F06F5C;
+        border-color: #F06F5C;
+      }
+    }
+
+    .title > span, .date > span {
+      font-size: 14px;
+      color: #6A7D8D;
+    }
+
+    .title {
+      margin-bottom: 25px;
+
+      & > input {
+        display: inline-block;
+        background-color: #fff;
+        border-radius: 4px;
+        border: none;
+        border: 1px solid #f4f6f8;
+        color: #1f2d3d;
+        font-size: 14px;
+        height: 36px;
+        line-height: 36px;
+        width: 160px;
+        padding: 0 10px;
+        outline: none;
+      }
+    }
+
+    .date {
+      margin-bottom: 25px;
+
+      & > div {
+        margin-right: 15px;
+      }
+    }
+  }
+}

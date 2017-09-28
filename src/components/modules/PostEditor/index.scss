@@ -1,0 +1,102 @@
+.post_editor {
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #F4F8F9;
+  overflow: hidden;
+
+  .target_fix {
+    position: absolute;
+    z-index: -1;
+    display: inline-block;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+  }
+}
+
+.editor_container {
+  background-color: #F9FAFC;
+  border-radius: 6px;
+  padding: 25px;
+  overflow: hidden;
+
+  .textarea, .homework_title {
+    position: relative;
+    margin-bottom: 30px;
+    height: 128px; 
+
+    & > textarea, & > input {
+      display: block;
+      width: 100%;
+      height: 100%;
+      box-sizing:border-box;
+      font-size: 14px;
+      line-height: 22px;
+      color: #2C3E50;
+      padding: 10px 25px;
+      border-radius: 6px;
+      border: 1px solid #f4f6f8;
+    }
+
+    .text_count, .text_has_drafted {
+      position: absolute;
+      bottom: -25px;
+      right: 0;
+      line-height: 22px;
+      color: #A7B8C3;
+      font-size: 12px;
+    }
+
+    .text_has_drafted {
+      left: 0;
+    }
+
+    .full_count {
+      color: #FB7648;
+    }
+  }
+
+  .upload_container {
+    margin-bottom: 10px;
+  }
+
+  .homework_title {
+    height: 45px;
+  }
+
+  .homework_end_date {
+    float: left;
+    width: 70%;
+
+    & > span {
+      float: left;
+      line-height: 30px;
+    }
+
+    & > div {
+      position: relative;
+      top: -3px;
+      margin-right: 15px;
+      width: 35%;
+    }
+  }
+
+  .draft {
+    color: #4DA1FF;
+    font-size: 12px;
+    margin: 0;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+
+  & > a {
+    float: right; 
+    margin-left: 10px;
+  }
+
+  .confirm {
+    background-color: #1FCE6D;
+  }
+}

@@ -1,0 +1,108 @@
+.boxy {
+  transition: all .2s ease-in-out;
+
+  .boxy_content {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    z-index: 99999;
+    width: 270px;
+    margin-top: -100px;
+    margin-left: -165px;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 70px 30px;
+    text-align: center;
+    box-shadow: 0 0 1px rgba(0,0,0,0.05);
+    transition: all .2s ease-in-out;
+
+    .message {
+      display: inline-block;
+      font-size: 16px;
+      color: #333;
+      line-height: 30px;
+    }
+
+    .password {
+      width: 50px;
+    }
+
+    .confirm_option {
+      margin-top: 25px;
+      margin-bottom: 35px;
+
+      .confirm {
+        background-color: #2ECC71;
+        margin-left: 25px;
+      }
+
+      .cancel {
+        color: #2ECC71;
+        border-color: #2ECC71;
+      }
+    }
+
+    .warning_option {
+      margin-top: 25px;
+      margin-bottom: 35px;
+
+
+      .warning {
+        background-color: #FB7648;
+        margin-left: 25px;
+      }
+
+      .cancel {
+        color: #FB7648;
+        border-color: #FB7648;
+      }
+    }
+
+    .prompt_option {
+      margin-top: 25px;
+      margin-bottom: 35px;
+
+      .prompt {
+        background-color: #2ECC71;
+      }
+    }
+  }
+
+  .confirm_boxy {
+    padding-top: 60px;
+    padding-bottom: 0;
+  }
+
+  .toast {
+    position: fixed;
+    top: 120px;
+    left: 46%;
+    width: 300px;
+    text-align: center;
+    z-index: 99999;
+
+    & > span {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: rgba(0,0,0,0.4);
+      color: #fff;
+      font-size: 14px;
+      border-radius: 4px;
+    }
+  }
+}
+
+.showBoxyMash {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  background-color: rgba(0,0,0,0.3);
+
+  .showBoxy {
+    display: block;
+    transition: all .2s ease-in-out;
+  }
+}

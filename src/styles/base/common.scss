@@ -1,0 +1,170 @@
+// vue transition animation
+.fade-slow-enter-active, .fade-slow-leave-active { transition: opacity 2s }
+.fade-slow-enter, .fade-slow-leave-to { opacity: 0 }
+
+.fade-quick-enter-active, .fade-quick-leave-active { transition: opacity .1s }
+.fade-quick-enter, .fade-quick-leave-to { opacity: 0 }
+
+.fade-enter-active, .fade-leave-active { transition: opacity .5s }
+.fade-enter, .fade-leave-to { opacity: 0 }
+
+// 网页无内容的提示的开头，配合类名.icon-double-quotation
+.tip > p {
+  text-align: center;
+  font-size: 18px;
+  color: #474F58;
+
+  & > .tip_head {
+    position: relative;
+    top: -10px;
+    left: -10px;
+    color: #9BA3AF;
+  }
+}
+
+.visibility { opacity: 1 !important; }
+.bold { font-weight: bold !important; }
+.text_center { text-align: center !important; }
+.pull_right { float: right; }
+.pull_left { float: left; }
+.mr10 { margin-right: 10px; }
+.mr20 { margin-right: 20px; }
+.ml10 { margin-left: 10px; }
+.ml20 { margin-left: 20px; }
+.hidden { display: none !important; }
+.unoverflow { overflow: hidden; }
+.inline_block { display: inline-block; }
+
+.no_warp {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.btn_solid, .btn_solid_small, .btn_solid_large {
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  background-color: #ccc;
+  transition: all .1s linear;
+}
+
+.btn_solid {
+  padding: 0 20px;
+  height: 38px;
+  line-height: 38px;
+}
+
+.btn_solid_small {
+  font-size: 14px;
+  padding: 0 12px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.btn_solid_large {
+  font-size: 18px;
+  height: 48px;
+  line-height: 48px;
+  border-radius: 6px;
+  padding: 0 40px;
+}
+
+.btn_solid:hover, .btn_solid_large:hover, .btn_solid_small:hover {
+  opacity: 0.9;
+}
+
+.btn_solid_disabled {
+  background-color: #ccc !important;
+  cursor: default !important;
+}
+
+.btn_hollow, .btn_hollow_small, .btn_hollow_large {
+  cursor: pointer;
+  display: inline-block;
+  color: #ccc;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+  transition: all .1s linear;
+}
+
+.btn_hollow {
+  padding: 0 19px;
+  height: 36px;
+  line-height: 36px;
+}
+
+.btn_hollow_small {
+  font-size: 14px;
+  padding: 0 11px;
+  height: 28px;
+  line-height: 28px;
+}
+
+.btn_hollow_large {
+  height: 46px;
+  line-height: 46px;
+  border-radius: 6px;
+  padding: 0 40px;
+}
+
+.btn_hollow_large:hover, .btn_hollow:hover, .btn_hollow_small:hover {
+  background-color: rgba(0,0,0,0.02);
+}
+
+.btn_hollow_disabled {
+  color: #ccc !important;
+  border-color: #ccc !important;
+  cursor: default !important;
+}
+
+.alt {
+  position: relative;
+
+  & > span {
+    position: absolute;
+    top: -30px;
+    left: -20px;
+    padding: 4px 5px;
+    background-color: #ccc;
+    color: #fff;
+    font-size: 13px;
+    line-height: 13px;
+    border-radius: 3px;
+    opacity: 0;
+    transition: all .1s linear;
+  }
+}
+
+.alt:hover {
+  & > span {
+    animation: delayFade 1s linear;
+    animation-fill-mode: forwards;
+  }
+}
+
+@keyframes delayFade {
+  0%{ opacity: 0 }
+  40%{ opacity: 0 }
+  50%{ opacity: 0.9 }
+  100%{ opacity: 0.9 }
+}
+
+.rotate {
+  position: absolute;
+  animation: rotate 1.5s linear infinite;
+}
+
+@keyframes rotate {
+  0%{transform:rotate(0deg);}
+  100%{transform:rotate(360deg);}
+}
+
+.blur { 
+  filter: blur(15px);
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=10, MakeShadow=false); /* IE6~IE9 */
+}

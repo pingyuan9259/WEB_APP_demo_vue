@@ -1,0 +1,462 @@
+.hello-live {
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  .live_header {
+    width: 100%;
+    background-color: #fff;
+    height: 60px;
+    line-height: 60px;
+    text-align: left;
+    display: flex;
+    justify-content: row;
+    align-items: center;
+    img {
+      margin-left: 22px;
+      margin-right: 56px;
+      width: 88px;
+      height: 30px;
+    }
+    h4 {
+      padding-left: 30px;
+      color: #319BF5;
+    }
+  }
+}
+
+#hello-box {
+  width: 100%;
+  overflow: hidden;
+  .live-over-box {
+    border-radius: 3px;
+    width: 600px;
+    height: 300px;
+    background-color: #fff;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-left: -300px;
+    margin-top: -200px;
+    z-index: 1112;
+    text-align: center;
+    background-color: #fff;
+    color: #28313B;
+
+    button {
+      position: absolute;
+      top: 0;
+      right: 10px;
+      margin-top: 10px;
+      font-size: 14px;
+      color: #fff;
+      outline: 0;
+      border: 0;
+      border-radius: 4px;
+      background: #319BF5;
+      width: 50px;
+      height: 30px;
+    }
+
+    .live-over-title {
+      padding-top: 60px;
+      font-size: 46px;
+    }
+    .live-over-content {
+      margin-top: 50px;
+      font-size: 28px;
+    }
+  }
+
+  .live-err-box {
+    border-radius: 3px;
+    width: 600px;
+    height: 300px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    margin-left: -300px;
+    margin-top: -150px;
+    z-index: 112;
+    text-align: center;
+    background-color: #fff;
+    color: #28313B;
+
+    .live-over-title {
+      padding-top: 50px;
+      font-size: 32px;
+    }
+    .live-over-content {
+      width: 400px;
+      display: inline-block;
+      text-align: left;
+      margin-top: 30px;
+      font-size: 20px;
+      line-height: 1.5;
+
+      span {
+        color: #319BF5;
+        font-size: 22px;
+      }
+    }
+    button {
+      position: absolute;
+      top: 0;
+      right: 10px;
+      margin-top: 10px;
+      font-size: 14px;
+      color: #fff;
+      outline: 0;
+      border: 0;
+      border-radius: 4px;
+      background: #319BF5;
+      width: 50px;
+      height: 30px;
+    }
+  }
+
+  .flash-error {
+    width: 650px;
+    background-color: rgba(0, 0, 0, 1);
+    position: relative;
+    left: 50%;
+    top: 35%;
+    margin-left: -325px;
+    margin-top: -15px;
+    z-index: 102;
+    text-align: center;
+    color: #28313B;
+    .live-flash-title {
+      color: #C5C5C5;
+      font-size: 30px;
+    }
+    .live-flash-content {
+      margin-top: 30px;
+      margin-bottom: 40px;
+      color: #ABABAB;
+      font-size: 18px;
+    }
+    .live-flash-a {
+      display: inline-block;
+      padding-right: 22px;
+      background-color: #F8F8F8;
+      height: 40px;
+      line-height: 40px;
+      width: 190px;
+      border-radius: 20px;
+      color: #333333;
+      font-size: 18px;
+      img {
+        margin: 0;
+        margin-bottom: -2px;
+        margin-right: 11px;
+        margin-left: 22px;
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
+
+}
+// 回放video
+.play-back-box {
+  border: 1px solid red;
+  background-color: #000;
+  width: 100%;
+  overflow: hidden;
+}
+
+.xs-chat {
+  border-top: 1px solid #E8EEF4;
+  // position: absolute;
+  position: fixed;
+  top: 60px;
+  right: 0;
+  width: 320px;
+  background: #fff;
+}
+// .ui-state-disabled {
+//   opacity: 1!important;
+// }
+.swiper-change-big {
+  top: 10px;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  text-align: center;
+  transition: .3s;
+  transform: translate3d(0,0,0);
+  z-index: 10;
+  img {
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+#video-container {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  overflow: hidden;
+  .vcp-error-tips {
+    display: none!important;
+  }
+}
+
+// 轮播图
+.swiper-box-position {
+  position: absolute;
+  top: 90;
+  left: 0;
+  z-index: 12;
+  width: 300px;
+  height: 200px;
+}
+
+.live-banner {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+
+  .slide_banner {
+    height: 100%;
+    background-color: #F5F9FA;
+  }
+
+  .slide_item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+
+    img {
+      display: block;
+      // opacity: 0;
+      width: 100%;
+    }
+
+    &.fade-enter {
+      opacity: 0;
+    }
+
+    &.fade-enter-active {
+      transition: all .5s linear;
+    }
+
+    &.fade-leave-active {
+      opacity: 0;
+      transition: all .5s linear;
+    }
+  }
+
+  .slide_jump {
+    position: absolute;
+    bottom: 20px;
+    z-index: 99;
+    font-size: 12px;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    transition: all .1s linear;
+
+    & > li {
+      display: inline-block;
+      opacity: 0.6;
+      margin: 0 7px;
+    }
+
+    & > li:hover {
+      opacity: 0.8;
+    }
+  }
+
+  .slide_switch > span {
+    position: absolute;
+    top: 50%;
+    margin-top: -24px;
+    font-size: 48px;
+    color: #fff;
+    opacity: 0.3;
+    transition: all .1s linear;
+  }
+
+  .slide_switch > span:hover {
+    opacity: 0.6;
+  }
+
+  .slide_switch > .prev {
+    left: 30px;
+  }
+
+  .slide_switch > .next {
+    right: 30px;
+  }
+
+  .slide_page {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    opacity: 0.4;
+    transform: all .1s linear;
+
+    & > span {
+      font-size: 14px;
+      color: #333;
+      display: inline-block;
+      background-color: #fff;
+      width: 42px;
+      text-align: center;
+      height: 42px;
+      line-height: 42px;
+      border-radius: 21px;
+    }
+  }
+
+  // user_banner
+  .user_banner {
+    height: 25vw;
+
+    .banner_bg {
+      position: absolute;
+      top: -20px;
+      left: -20px;
+      width: 104vw;
+      opacity: 0;
+    }
+
+    .user_info {
+      width: 100%;
+      height: 100%;
+    }
+
+    .avatar {
+      height: 130px;
+      width: 130px;
+      border-radius: 65px;
+      overflow: hidden;
+
+      position: absolute;
+      top: 50%;
+      left: 120px;
+      margin-top: -65px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .desc {
+      position: absolute;
+      top: 25%;
+      left: 290px;
+      color: #fff;
+      font-size: 14px;
+
+      li {
+        opacity: 0.7;
+        margin-bottom: 15px;
+      }
+
+      .name {
+        opacity: 0.9;
+        margin-bottom: 30px;
+        font-size: 16px;
+        color: #fff;
+      }
+
+      .name > .tag {
+        position: absolute;
+        top: -5px;
+        left: 60px;
+        font-size: 14px;
+
+        .sex {
+          color: #2dbfb9;
+          margin-right: 5px;
+        }
+
+        .authentication {
+          color: #ccc;
+        }
+
+      }
+
+      .intro {
+        width: 450px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .edit {
+        display: inline-block;
+        text-align: center;
+        background-color: rgba(255,255,255,0.8);
+        border-radius: 4px;
+        width: 120px;
+        height: 25px;
+        margin-top: 15px;
+      }
+
+      .edit > a {
+        color: #333;
+        line-height: 25px;
+      }
+    }
+  }
+
+  // buy_banner
+  .buy_banner {
+    height: 33.33vw;
+    width: 100%;
+
+    & > img {
+      position: absolute;
+      top: -30px;
+      left: -30px;
+      width: 110vw;
+    }
+  }
+
+  .buyBtn {
+    position: absolute;
+    text-align: center;
+    bottom: 40px;
+    width: 100%;
+
+    & > a {
+      display: inline-block;
+      border-radius: 4px;
+      opacity: 0.7;
+      background-color: #fff;
+      color: #333;
+      height: 36px;
+      line-height: 36px;
+      font-size: 18px;
+      padding: 0 20px;
+    }
+
+    & > a:hover {
+      opacity: 0.9;
+    }
+  }
+
+  .slide_item > img[lazy=loaded],
+  .user_banner > img[lazy=loaded] {
+    opacity: 1;
+    transition: all .5s linear;
+  }
+}
+// 禁止点击画面暂停事件
+.vcp-bigplay {
+  width: 0 !important;
+  height: 0!important;
+}

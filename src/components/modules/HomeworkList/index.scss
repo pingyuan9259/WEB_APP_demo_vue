@@ -1,0 +1,59 @@
+.homework_list_page {
+  margin: 25px 0;
+
+  .homework_item {
+    border: 1px solid #E9EFF4;
+    border-radius: 6px;
+    padding: 18px 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: all .1s linear;
+
+    & > h4 {
+      font-size: 14px;
+      font-weight: normal;
+      color: #474F58;
+      line-height: 16px;
+      margin-bottom: 12px;
+    }
+
+    & > p {
+      font-size: 14px;
+      // color: #323C48;
+      color: #9BA3AF;
+      line-height: 14px;
+      margin-bottom: 20px;
+    }
+
+    .date {
+      font-size: 14px;
+      color: #808FA3;
+      margin-right: 15px;
+    }
+
+    .icon-reply {
+      color: #A7B8C3;
+      font-size: 14px;
+      margin-right: 3px;
+    }
+
+    .reply_num {
+      color: #808FA3;
+      font-size: 14px;
+    }
+  }
+
+  .homework_item:hover {
+    background-color: #F9FAFC;
+  }
+
+  .load {
+    margin-bottom: 20px;
+    margin-top: 40px;
+    font-size: 14px;
+    color: #A7B8C3;
+    text-align: center;
+  }
+
+  .tip { padding: 15vh 0; }
+}

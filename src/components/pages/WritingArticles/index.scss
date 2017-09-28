@@ -1,0 +1,113 @@
+.article_list_page {
+  position: relative;
+  background-color: #fff;
+  margin: 45px auto;
+  border-radius: 6px;
+  // border: 1px solid #E9EFF4;
+  overflow: hidden;
+  width: 820px;
+  min-height: calc(100vh - 250px);
+  padding: 35px 60px;
+  text-align: center;
+
+  .article_list {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 30px;
+    width: 100%;
+
+    & > .top_bar {
+      overflow: hidden;
+
+      & > h3 {
+        display: inline-block;
+        text-align: left;
+        margin-top: 10px;
+        margin-bottom: 40px;
+        font-size: 14px;
+        color: #7AC5B5;
+      }
+
+      & > .edit {
+        border-color: #7AC5B5;
+        color: #7AC5B5;
+      }
+    }
+
+
+    & > table {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+
+  .article_list_head {
+    color: #999;
+    font-size: 14px;
+    font-weight: normal;
+
+    & > th {
+      padding: 12px 20px;
+      text-align: left;
+      height: 30px;
+      vertical-align: middle;
+      white-space: nowrap;
+    }
+  }
+
+
+  .article_list_item {
+    font-size: 13px;
+    color: #666;
+    cursor: pointer;
+    transition: all .1s linear;
+
+    & > td {
+      max-width: 20vw;
+      padding: 12px 20px;
+      padding-right: 20px;
+      text-align: left;
+      white-space: nowrap;
+      cursor: pointer;
+      height: 30px;
+      vertical-align: middle;
+    }
+
+    .cover {
+      width: 80px;
+      text-align: center;
+      padding-right: 60px;
+
+      & > img {
+        height: 30px;
+      }
+    }
+
+    .delete {
+      cursor: default;
+
+      & > a {
+        color: #7AC5B5;
+        cursor: pointer;
+        margin-left: -10px;
+        padding: 4px 10px;
+        border-radius: 3px;
+        transition: all .1s linear;
+      }
+
+      & > a:hover {
+        background-color: #EBEEF3;
+      }
+    }
+  }
+  .article_list_item:nth-child(even) { background-color: #f9f9f9; }
+
+  .article_list_item:hover {
+    background-color: #f5f5f5;
+  }
+
+  .article_list > .tip {
+    width: 100%;
+    padding: 22vh 0;
+  }
+}

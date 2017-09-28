@@ -1,0 +1,98 @@
+.comments {
+  margin-top: 230px;
+
+  .comments_content {
+    position: relative;
+    background-color: #fff;
+    margin: 30px auto;
+    width: 560px;
+    padding: 35px 100px;
+    border-radius: 6px;
+    border: 1px solid #E9EFF4;
+
+    .create {
+      display: inline-block;
+      float: right;
+      color: #2ECC71;
+      border-color: #3AD59C;
+    }
+    
+    & > h3 {
+      display: inline-block;
+      line-height: 30px;
+      height: 30px;
+      font-size: 16px;
+      color: #999;
+    }
+  }
+
+  .comments_list {
+    margin-top: 30px;
+  }
+
+  .comments_item {
+    margin: 20px 0;
+    overflow: hidden;
+
+    & > img {
+      float: left;
+      width: 32px;
+      height: 32px;
+      border-radius: 16px;
+    }
+
+    .item_content {
+      margin-left: 47px;
+      border-bottom: 1px solid #F4F8F9;
+      padding-bottom: 25px;
+      color: #17344B;
+      font-size: 14px;
+      line-height: 14px;
+
+      .name { display: inline-block; margin-bottom: 15px; }
+      .title {font-size: 15px; line-height: 22px; margin-bottom: 15px; }
+      .time { font-size: 13px; color: #A7B8C3; margin-right: 20px;}
+      .like { margin-right: 2px; color: #A7B8C3; cursor: pointer; }
+      .like_num { font-size: 15px; color: #A7B8C3;}
+      .reply { font-size: 15px; color: #A7B8C3; cursor: pointer; margin-left: 20px;}
+
+      .reply_list {
+        position: relative;
+        background-color: #F9FAFC;
+        padding: 15px 20px;
+        border-radius: 4px;
+        margin-top: 20px;
+        overflow: hidden;
+
+        .reply_user { font-size: 14px; color: #A7B8C3; margin-right: -5px; }
+        .reply_content { font-size: 14px; line-height: 25px; color: #17344B; }
+
+        .show_more {
+          position: absolute;
+          bottom: 0;
+          left: 15px;
+          right: 15px;
+          background-color: #F9FAFC;
+          padding-top: 10px;
+          text-align: center;
+
+          & > a {
+            display: block;
+            border-top: 1px solid #f5f5f5;
+            padding: 12px 0;
+            font-size: 13px;
+            line-height: 13px;
+            color: #A7B8C3;
+            transition: all .1s linear;
+          }
+
+          & > a:hover {
+            color: #8fa1ad;
+          }
+        }
+      }
+    }
+  }
+
+  .tip { padding: 15vh 0; }
+}

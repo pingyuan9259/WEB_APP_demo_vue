@@ -1,0 +1,173 @@
+.upload_ppt {
+  & > h3 {
+    display: inline-block;
+    line-height: 30px;
+    height: 30px;
+    font-size: 14px;
+    color: #97A4B1;
+  }  
+
+  .add_ppt {
+    float: right;
+    color: #2ECC71;
+    border-color: #2ECC71;
+  }
+
+  .ppt_list {
+    margin-top: 25px;
+    margin-bottom: -30px;
+  }
+
+  .ppt_item {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    padding-left: 70px;
+    border-radius: 4px;
+    width: 270px;
+    height: 52px;
+    overflow: hidden;
+    position: relative;
+
+    .ppt_cover {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: inline-block;
+      border-radius: 4px;
+      width: 50px; height: 50px;
+      border: 1px solid #E9EFF4;
+    }
+
+    .ppt_title {
+      display: block;
+      color: #393D54;
+      font-size: 14px;
+      line-height: 14px;
+      margin-top: 7px;
+      margin-bottom: 10px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+
+    .ppt_time {
+      font-size: 13px;
+      line-height: 13px;
+      color: #93A5A6;
+    }
+
+    .ppt_select, .ppt_delete {
+      cursor: pointer;
+      color: #3398DB;
+      font-size: 13px;
+      margin-left: 10px;
+      transition: all .1s linear;
+      padding-left: 13px;
+      border-left: 1px solid #E9EFF4;
+    }
+
+    .disabled {
+      font-size: 13px;
+      cursor: default;
+      color: #93A5A6;
+    }
+  }
+
+  .editor_mash {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+  }
+
+  .editor {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -275px;
+    margin-top: -120px;
+    width: 680px;
+    background-color: #F9FAFC;
+    padding: 35px;
+    border-radius: 6px;
+    overflow: hidden;
+
+    .option {
+      margin-bottom: 25px;
+      overflow: hidden;
+
+      & > h3 {
+        display: inline-block;
+        line-height: 30px;
+        color: #333;
+      }
+
+      .submit {
+        float: right;
+        color: #fff;
+        background-color: #2ECC71;
+      }
+
+      .cancel {
+        float: right;
+        margin-right: 15px;
+        color: #2ECC71;
+        border-color: #3AD59C;
+      }
+    }
+
+    .title {
+      display: block;
+      margin-bottom: 25px;
+
+      & > span {
+        font-size: 14px;
+        color: #6A7D8D;
+      }
+
+      & > input {
+        display: inline-block;
+        background-color: #fff;
+        border-radius: 4px;
+        border: none;
+        border: 1px solid #f4f6f8;
+        color: #1f2d3d;
+        font-size: 14px;
+        height: 36px;
+        line-height: 36px;
+        width: 300px;
+        padding: 0 10px;
+        outline: none;
+      }
+    }
+
+    .add_btn {
+      position: relative;
+      margin-right: 15px;
+      overflow: hidden;
+      background-color: #2ECC71;
+
+      & > input {
+        position: absolute;
+        top: -20px;
+        left: 0;
+        height: 50px;
+      }
+    }
+
+    .add_tip {
+      position: relative;
+      top: -10px;
+      display: inline-block;
+      font-size: 14px;
+      color: #97A4B1;
+    }
+  }
+
+  .tip { padding: 8vh 0; }
+}
